@@ -1,0 +1,20 @@
+.thank-you-container{
+    margin-left: 120px;
+    margin-top: 40px;
+}
+.message{
+    color: hsl(25, 97%, 53%);;
+    margin-left: 110px;
+}
+.thank-you-message{
+    color:white;
+    font-weight: 700;
+    margin-left: 160px;
+    font-size: 20px;
+}
+.text{
+    color:gray;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-size: 15px;
+}

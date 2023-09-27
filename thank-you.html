@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thank you</title>
+    <link rel="stylesheet" href="rating.css">
+    <link rel="stylesheet" href="thank-you.css">
+</head>
+<body>
+
+    <div class="main-box">
+        <div class="thank-you-container"> <img src="images/illustration-thank-you.svg">  </div>
+        <div class="message js-message"> you selected <span class="js-score-message">5</span> out of 5 </div>
+        <div class="thank-you-message"> thank you! </div>
+        <div class="text">  We appreciate you taking the time to give a rating. If you ever need more support, dont hesitate to get in touch!</div>
+    </div>
+
+
+    <script src="rating.js"> </script>
+    <script>
+        const selectedRating = localStorage.getItem('selectedRating');
+        const scoreMessage = document.querySelector('.js-score-message');
+        
+        if (selectedRating) {
+            scoreMessage.textContent = selectedRating;
+        }
+    </script>
+</body>
+</html>
